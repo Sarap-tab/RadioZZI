@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.container {
+    max-width: absolute;
+    margin: 10px;
+ }
+
+.header {
+    background-image: url(Imagenes/portada\ 11.jpeg);
+    background-position:center bottom ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+ }
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000px;
+ }
+
+
+.logo {
+    width: 80px;               /* Tamaño del logo */
+    height: auto;               /* Mantiene la proporción */
+    margin-right: 5px;         /* Espacio entre el logo y el texto */
+}
+
+
+
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+ }
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600px;
+    transition: color o.3s;
+}
+.menu .navbar ul li a:hover{
+    color: #ffffff;
+}
+  #menu{
+    display: none;
+ }
+.menu-icono {
+    width: 10px;
+ }
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt{
+    text-align: center;
+}
+
+.header-txt h1{
+    font-size: 85px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.header-txt p {
+    color: beige;
+    font-size: 22px;
+    padding: 0 250px;
+}
+
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #FFFDFC;
+    color: #FFFDFC;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-1:hover{
+    color: rgb(0, 0, 0);
+    background-color: #FFFDFC;
+}
+
+.general{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.general-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    
+}
+
+.general-1{
+    background-image: url(Imagenes/f76f51bb-089b-4cf0-968b-7d52ef21ad6f-removebg-preview.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    padding: 80px 80px;
+}
+
+.general-2{
+    background-image: url(Imagenes/f76f51bb-089b-4cf0-968b-7d52ef21ad6f-removebg-preview.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100px;
+    padding: 80px 80px;
+}
+
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.txt h3{
+    font-size: 30px;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+
+.txt p {
+    color:white;
+    font-size: 2opx;
+    text-align: center;
+    padding: 25px;
+}
+
+.info-1 {
+    padding: 150px 0;
+    background-image: url(Imagenes/portada.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.info-content {
+    text-align: center;
+}
+ .info-content h2, span {
+    color: #FFFDFC;
+ }
+
+ .info-circle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+ }
+
+ .circle-txt {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+ }
+
+ .circle-1 {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #FFFDFC;
+    border-radius: 50%;
+    padding-top: 35px;
+ }
+
+ .circle-1 h3{
+    color: beige;
+    font-size: 25px;
+ }
+
+.circle-txt p {
+    color: beige;
+    margin-top: 30px;
+}
+
+.footer {
+    padding: 600px;
+    text-align: center;
+}
+
+.form{
+    margin-top: 8px;
+}
+
+.campo{
+    margin-right: 60px;
+    padding: 17px 35px;
+    border: 2px solid #b4b4b4;
+    outline: none;
+    color: black;
+}
+
+.campo::placeholder{
+    color: #b4b4b4;
+}
+
+.btn-2{
+    padding: 17px 35px;
+    border: 1px solid black;
+    background-color: black;
+    color: #FFFDFC;
+}
+
+.footer-txt{
+    margin-top: 100px;
+    border-top: 2px solid #b4b4b47E;
+    padding: 20px 0;
+}
+
+.footer-txt p {
+    color: black;
+    font-size: 16px;
+
+}
+@media (max-width: 991px) {
+    .menu {
+        padding: 10px; /* Considera usar padding en unidades relativas */
+    }
+    
+    .menu label {
+        display: initial;
+    }
+    
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        display: none;
+    }
+    
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    
+    #menu:checked ~ .navbar {
+        display: initial; /* Alternativa: considera usar display: block; */
+    }
+    
+    .header {
+        min-height: 40vh; /* Evita usar vh, usa valores más controlables */
+    }
+    
+    .header-content {
+        padding: 100px 30px; /* Ajusta según sea necesario */
+    }
+    
+    .header-txt h1 {
+        font-size: 5rem; /* Usa rem para ser más responsivo */
+    }
+    
+    .header-txt p {
+        padding: 0;
+    }
+    
+    .general {
+        padding: 30px; /* Simplifica el padding */
+    }
+    
+    .general-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .general-1,
+    .general-2 {
+        height: auto; /* Permite que la altura se ajuste según el contenido */
+        padding: 30px; /* Reduce el padding para móviles */
+        margin-bottom: 10px;
+    }
+    
+    .info-1 {
+        padding: 100px 30px; /* Reduce el padding para móviles */
+        background-size: cover;
+        margin-top: -50px; /* Ajusta según el diseño */
+    }
+    
+    .info-circle {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .circle-txt {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .g2 {
+        margin-top: -50px; /* Ajusta según sea necesario */
+    }
+    
+    .info-2 {
+        padding: 100px 30px; /* Reduce el padding para móviles */
+        background-size: cover;
+        margin-top: -50px; /* Ajusta según el diseño */
+    }
+    
+    h2 {
+        font-size: 2rem; /* Usa rem para ser más responsivo */
+    }
+    
+    .footer {
+        padding: 0;
+        margin-top: -100px; /* Ajusta según sea necesario */
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px; /* Ajusta el padding */
+    }
+    
+    .campo {
+        margin: 0 0 10px 0;
+    }
+    
+    .footer-txt {
+        margin-top: 20px; /* Ajusta según sea necesario */
+    }
+}
+
